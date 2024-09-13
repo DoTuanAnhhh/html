@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu thông tin cá nhân</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        /* Bố cục trang */
+        .container {
+            display: flex;
+            height: 147vh;
+        }
+        .left {
+            width: 20%;
+        }
+        .right {
+            width: 30%;
+        }
+        .content {
+            width: 50%;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        /* Định dạng các phần */
+        h1, h2 {
+            text-align:left;
+            color: red;
+        }
+        h3 { 
+            text-align: left;
+            color: #12b700;
+        }
+        .profile-image {
+            display:flex   ;
+            justify-content: right;
+        }
+        .profile-image img {
+            border-radius: 40%;
+            width: 200px;
+            height: 200px;
+            margin-top: -180px;
+                
+        }
+        .info, .skills, .future-goals {
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        /* nhạc */
+        .media-list {
+            margin-bottom: 20px;
+        }
+     
+        .navigation {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .navigation a {
+            margin: 0 10px;
+        }
+        .rectangle-box {
+            border: 2px solid black; 
+            padding: 20px; 
+            width: 200px;
+            height: 300px; 
+            margin: 0 20px 20px 0; 
+            float: right; 
+            text-align: center;
+        }
+
+    
+        .content {
+            margin-left: 220px; 
+        }
+
+        .clear {
+            clear: both; 
+        }
+        .skill-bar {
+            width: 100%;
+            background-color: #f0f0f0;
+            border-radius: 25px; 
+            padding: 3px; 
+            margin: 20px 0; 
+        }
+
+      
+        .skill-level1 {
+            width: 100%; 
+            background-color: #4caf50; 
+            height: 30px; 
+            border-radius: 22px; 
+            text-align: center;
+            color: white;
+            line-height: 30px; 
+            font-weight: bold; 
+        }
+        .skill-level2 {
+            width: 100%; 
+            background-color: #861818; 
+            height: 30px; 
+            border-radius: 22px; 
+            text-align: center;
+            color: white; 
+            line-height: 30px;
+            font-weight: bold; 
+        }
+        .skill-level3 {
+            width: 100%;
+            background-color: #2215d2; 
+            height: 30px; 
+            border-radius: 22px;
+            color: white;
+            line-height: 30px; 
+            font-weight: bold;
+        }
+        .skill-level4 {
+            width: 100%;
+            background-color: #d215a9; 
+            height: 30px; 
+            border-radius: 22px; 
+            text-align: center; 
+            color: white; 
+            line-height: 30px; 
+            font-weight: bold; 
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!-- Container chính -->
+    <div class="container">
+        <div class="left"></div>
+        <div class="content">
+            <!-- Mục điều hướng -->
+            <div class="navigation">
+                <a href="#top">Đầu trang</a>
+                <a href="#contact-info">Liên hệ</a>
+                <a href="#hard-skills">Kỹ năng cứng</a>
+                <a href="#soft-skills">Kỹ năng mềm</a>
+                <a href="#future-goals">Mục tiêu</a>
+                <a href="#bottom">Cuối trang</a>
+                <hr>
+            </div>
+            
+            <!-- Thông tin cá nhân -->
+            <section id="top">
+                <h1>Giới thiệu bản thân</h1>
+                <h3>Đỗ Tuấn Anh</h3>
+                <p>Sinh viên năm 4 - Trường đại học Mỏ-Địa chất</p>
+                <p>Hiện tại, tôi đang là một sinh viên và muốn có thêm <br> kinh nghiệm về việc làm mà tôi đang theo học hiện tại.</p>
+                <div class="profile-image">
+                    <img src="thobaymau.jpg" alt="Ảnh cá nhân">
+                </div>
+                
+                
+                <div class="info" id="contact-info">
+                <hr>
+                
+                    <h2>Thông tin liên hệ</h2>
+
+                    <div class="rectangle-box"> <!-- ô chữ nhật-->
+                
+                        <h2>Chứng chỉ</h2>
+
+                        <!-- Thanh hiển thị kỹ năng -->
+                        <div class="skill-bar">
+                            <div class="skill-level1">650 toeic</div>
+                            <br>
+                            <div class="skill-level2"> Chứng chỉ tin học VP</div>
+                            <br>
+                            <div class="skill-level3">CISSP</div>
+                            <br>
+                            <div class="skill-level4">AI</div>
+                        </div>
+                    </div>
+                    <p>Email: dotuananhsv4@gmail.com</p>
+                    <p>Điện thoại: 0971527318</p>
+                    <p>Địa chỉ: Cổ Nhuế, Bắc Từ Liên, Hà Nội</p>
+                </div>
+            
+            </section>
+
+            <!-- Kỹ năng cứng -->
+            <section id="hard-skills">
+                <h2>Kỹ năng cứng</h2>
+                <ul>
+                    <li>HTML/CSS/JavaScript</li>
+                    <li>Lập trình Python</li>
+                    <li>Phân tích dữ liệu</li>
+                    <li>Phát triển Web</li>
+                </ul>
+            </section>
+
+            <!-- Kỹ năng mềm -->
+            <section id="soft-skills">
+                <h2>Kỹ năng mềm</h2>
+                <ul>
+                    <li>Giao tiếp</li>
+                    <li>Làm việc nhóm</li>
+                    <li>Giải quyết vấn đề</li>
+                    <li>Tư duy sáng tạo</li>
+                </ul>
+            </section>
+
+            <!-- Mục tiêu trong tương lai -->
+            <section id="future-goals">
+                <h2>Mục tiêu trong tương lai</h2>
+                <p>Mục tiêu của tôi là phát triển bản thân trong lĩnh vực công nghệ thông tin, trở thành một chuyên gia về phân tích dữ liệu và đóng góp cho các dự án lớn liên quan đến AI và Machine Learning.</p>
+            </section>
+            <hr>
+            <!-- Danh sách nghe nhìn -->
+            <section id="media">
+                <h2>Bài hát yêu thích</h2>
+                <div class="media-list">
+                    <p>Bạn có thể nghe các bài hát yêu thích của tôi tại đây:</p>
+                    <audio controls>
+                        <source src="Tòng Phu.mp3" type="audio/mpeg">
+                        Trình duyệt của bạn không hỗ trợ phát nhạc.
+                    </audio>
+                    <br>
+                    <audio controls>
+                        <source src="Cạn tình như thế.mp3" type="audio/mpeg">
+                        Trình duyệt của bạn không hỗ trợ phát nhạc.
+                    </audio>
+                </div>
+            </section>
+
+          
+
+            <!-- Liên kết tới cuối trang -->
+            <div class="navigation" id="bottom">
+                <a href="#top">Lên đầu trang</a>
+            </div>
+        </div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>
